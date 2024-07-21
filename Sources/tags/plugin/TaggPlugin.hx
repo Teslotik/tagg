@@ -223,8 +223,11 @@ class TaggPlugin extends Plugin {
                     crow.DpiWidget(dpi -> {
                         dpi.dpi = 700.0 / 2.54;
                         // @todo turn on in release
-                        // dpi.enableDpiSupport = false;
+                        #if html5
+                        dpi.enableDpiSupport = false;
+                        #else
                         dpi.enableDpiSupport = true;
+                        #end
 
                         dpi.onInput = event -> {
                             var step = 2.54 * 6;
