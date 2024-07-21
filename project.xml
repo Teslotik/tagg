@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Textures and graffiti generator" package="net.teslotik.tagg" version="1.0.0" company="Teslotik" />
+	<app main="crovown.application.LimeApplication.LimeMain" path="Export" file="Tagg" />
+
+	<haxelib name="crovown" />
+	<haxelib name="lime" />
+
+	<haxeflag name="--macro" value='include("crovown.event")' />
+	<haxeflag name="--macro" value='include("crovown.component")' />
+	<haxeflag name="--macro" value='include("crovown.plugin")' />
+	<haxeflag name="--macro" value='include("tags.event")' />
+	<haxeflag name="--macro" value='include("tags.component")' />
+	<haxeflag name="--macro" value='include("tags.plugin")' />
+
+	<source path="Sources" />
+</project>
